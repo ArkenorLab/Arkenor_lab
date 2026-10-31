@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- SEO Primary (ES default - updated dynamically by i18n.js) -->
+  <title>ARKENOR LABS | Automatización, Desarrollo de Software e Integración</title>
+  <meta name="description" content="Ingeniería tecnológica para automatizar procesos, conectar sistemas y construir soluciones digitales inteligentes para empresas." />
+  <meta name="keywords" content="automatización de procesos, desarrollo de software a medida, integración de sistemas, inteligencia artificial empresarial, business process automation, custom software development, API integration, AI automation" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#101C25" />
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="/" />
+  <link rel="alternate" hreflang="es" href="/es" />
+  <link rel="alternate" hreflang="en" href="/en" />
+  <link rel="alternate" hreflang="x-default" href="/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ARKENOR LABS" />
+  <meta property="og:title" content="ARKENOR LABS | Automatización, Desarrollo de Software e Integración" />
+  <meta property="og:description" content="Ingeniería tecnológica para automatizar procesos, conectar sistemas y construir soluciones digitales inteligentes." />
+  <meta property="og:image" content="/assets/images/og-arkenor.png" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ARKENOR LABS | Automatización, Software e Integración" />
+  <meta name="twitter:description" content="Ingeniería tecnológica para automatizar procesos, conectar sistemas y construir soluciones digitales inteligentes." />
+  <meta name="twitter:image" content="/assets/images/og-arkenor.png" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ARKENOR LABS",
+    "description": "Ingeniería tecnológica especializada en automatización de procesos, desarrollo de software a medida e integración de sistemas.",
+    "url": "/",
+    "logo": "/assets/images/logo.svg",
+    "sameAs": [],
+    "knowsAbout": [
+      "Business Process Automation",
+      "Custom Software Development",
+      "API System Integration",
+      "Artificial Intelligence",
+      "Data Analytics",
+      "Technology Consulting"
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "category": "Technology Engineering Services"
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/images/favicon.svg" />
+
+  <!-- Preconnect performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts: Manrope + Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Design System & Components -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       STICKY HEADER
+  ============================================================ -->
+  <header class="site-header" id="siteHeader" role="banner">
+    <div class="container header-container">
+
+      <!-- Brand -->
+      <a href="/" class="header-brand" aria-label="ARKENOR LABS — Inicio">
+        <img src="/assets/images/logo.svg" alt="ARKENOR LABS" class="brand-logo-img" width="300" height="38" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" role="navigation" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link" data-i18n="nav.home">Inicio</a>
+        <a href="#servicios" class="nav-link" data-i18n="nav.services">Servicios</a>
+        <a href="#soluciones" class="nav-link" data-i18n="nav.solutions">Soluciones</a>
+        <a href="#metodologia" class="nav-link" data-i18n="nav.methodology">Metodología</a>
+        <a href="#nosotros" class="nav-link" data-i18n="nav.differentiators">Nosotros</a>
+        <a href="#cotizacion" class="nav-link" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Selector de idioma">
+          <button class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="#cotizacion" class="btn btn-primary btn-sm btn-quote-header" data-i18n="nav.cta">
+          Solicitar cotización
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-expanded="false" aria-controls="mobileNavDrawer" aria-label="Abrir menú">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Menú móvil" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="/assets/images/logo.svg" alt="ARKENOR LABS" height="30" />
+      <button class="drawer-close" id="mobileNavClose" aria-label="Cerrar menú">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav-links">
+      <a href="#inicio" data-i18n="nav.home">Inicio</a>
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#soluciones" data-i18n="nav.solutions">Soluciones</a>
+      <a href="#metodologia" data-i18n="nav.methodology">Metodología</a>
+      <a href="#nosotros" data-i18n="nav.differentiators">Nosotros</a>
+      <a href="#cotizacion" data-i18n="nav.contact">Contacto</a>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="#cotizacion" class="btn btn-primary" data-i18n="nav.cta">Solicitar cotización</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- ============================================================
+         SECTION 1 — HERO
+    ============================================================ -->
+    <section class="hero-section" id="inicio" aria-label="Sección principal">
+
+      <!-- Abstract Digital Architecture Canvas -->
+      <div class="hero-canvas-wrap" aria-hidden="true">
+        <canvas id="heroCanvas"></canvas>
+      </div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+
+            <!-- Badge -->
+            <div class="section-tag" aria-label="Categorías de servicio" data-i18n="hero.badge">
+              ENGINEERING · AUTOMATION · SOFTWARE
+            </div>
+
+            <!-- Hero Headline -->
+            <h1 class="hero-title" data-i18n="hero.title">
+              Convertimos procesos complejos en soluciones inteligentes.
+            </h1>
+
+            <!-- Description -->
+            <p class="hero-desc" data-i18n="hero.description">
+              Diseñamos, desarrollamos e integramos tecnología para optimizar operaciones, automatizar procesos y conectar ecosistemas digitales.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-ctas">
+              <a href="#cotizacion" class="btn btn-primary btn-lg" data-i18n="hero.ctaPrimary">
+                Solicitar cotización
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+
+              <a href="#servicios" class="btn btn-secondary btn-lg" data-i18n="hero.ctaSecondary">
+                Explorar servicios
+              </a>
+
+              <!-- WhatsApp Hero CTA -->
+              <a href="#cotizacion" class="btn btn-secondary btn-lg js-whatsapp-trigger" aria-label="Contactar por WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:#25D366">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp
+              </a>
+            </div>
+
+            <!-- Live Telemetry Strip -->
+            <div class="hero-telemetry" aria-label="Estado del sistema">
+              <div class="telemetry-item">
+                <span class="telemetry-dot" aria-hidden="true"></span>
+                <span data-i18n="hero.telemetry.architecture">Arquitectura: Escalable</span>
+              </div>
+              <div class="telemetry-item">
+                <span class="telemetry-dot" aria-hidden="true"></span>
+                <span data-i18n="hero.telemetry.pipeline">Pipeline: Activo 99.98%</span>
+              </div>
+              <div class="telemetry-item">
+                <span class="telemetry-dot" aria-hidden="true"></span>
+                <span data-i18n="hero.telemetry.latency">Latencia Ecosistema: &lt; 14ms</span>
+              </div>
+            </div>
+
+          </div><!-- /.hero-content -->
+        </div><!-- /.hero-grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — VALUE PROPOSITION (3 PILLARS)
+    ============================================================ -->
+    <section class="value-prop-section" id="propuesta" aria-label="Propuesta de valor">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag" data-i18n="valueProp.tag">PROPUESTA DE VALOR</span>
+          <h2 class="section-title" data-i18n="valueProp.title">
+            Más inteligencia. Menos fricción. Mejores resultados.
+          </h2>
+          <p class="section-subtitle" data-i18n="valueProp.subtitle">
+            Ayudamos a las organizaciones a optimizar sus operaciones eliminando cuellos de botella manuales y unificando su infraestructura digital.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+
+          <!-- Pillar 01: Intelligent Automation -->
+          <article class="pillar-card">
+            <div class="pillar-header">
+              <span class="pillar-num">01</span>
+              <div class="pillar-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="pillar-title">Intelligent Automation</h3>
+            <p class="pillar-desc" data-i18n="valueProp.pillars.0.desc">
+              Automatización de tareas críticas, flujos de trabajo transversales y procesamiento inteligente de información para elevar la productividad operativa.
+            </p>
+            <span class="pillar-metric-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+              </svg>
+              <span data-i18n="valueProp.pillars.0.metric">Hasta -70% tiempo operativo</span>
+            </span>
+          </article>
+
+          <!-- Pillar 02: Custom Software -->
+          <article class="pillar-card">
+            <div class="pillar-header">
+              <span class="pillar-num">02</span>
+              <div class="pillar-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="pillar-title">Custom Software</h3>
+            <p class="pillar-desc" data-i18n="valueProp.pillars.1.desc">
+              Desarrollo de aplicaciones y plataformas robustas diseñadas a la medida de la lógica y escala específica de tu negocio.
+            </p>
+            <span class="pillar-metric-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              <span data-i18n="valueProp.pillars.1.metric">Arquitecturas escalables</span>
+            </span>
+          </article>
+
+          <!-- Pillar 03: System Integration -->
+          <article class="pillar-card">
+            <div class="pillar-header">
+              <span class="pillar-num">03</span>
+              <div class="pillar-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="pillar-title">System Integration</h3>
+            <p class="pillar-desc" data-i18n="valueProp.pillars.2.desc">
+              Conexión bidireccional y segura entre plataformas, APIs, ERPs, CRMs y bases de datos heterogéneas sin fricción.
+            </p>
+            <span class="pillar-metric-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span data-i18n="valueProp.pillars.2.metric">Sincronización en tiempo real</span>
+            </span>
+          </article>
+
+        </div><!-- /.pillars-grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — SERVICES (6 CARDS)
+    ============================================================ -->
+    <section class="services-section" id="servicios" aria-label="Servicios de ingeniería">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag" data-i18n="services.tag">CAPACIDADES TÉCNICAS</span>
+          <h2 class="section-title" data-i18n="services.title">Servicios de Ingeniería Especializada</h2>
+          <p class="section-subtitle" data-i18n="services.subtitle">Soluciones tecnológicas diseñadas con rigor de ingeniería, código limpio y visión estratégica de negocio.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Service 1: Business Process Automation -->
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title" data-i18n="services.items.0.title">BUSINESS PROCESS AUTOMATION</h3>
+              <p class="service-card-desc" data-i18n="services.items.0.desc">Automatización de procesos empresariales, flujos de aprobación, procesamiento de documentos y tareas repetitivas de alta carga.</p>
+              <div class="service-benefit" data-i18n="services.items.0.benefit">Eliminación de errores manuales y aceleración de ciclos operativos.</div>
+              <div class="service-tags">
+                <span class="service-tag-pill">Workflows</span>
+                <span class="service-tag-pill">RPA</span>
+                <span class="service-tag-pill">OCR / Docs</span>
+                <span class="service-tag-pill">Approval Flows</span>
+              </div>
+            </div>
+            <div class="service-bottom">
+              <a href="#cotizacion" class="service-cta-link js-select-service" data-service-id="automation" data-i18n="services.requestService">
+                Cotizar este servicio
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 2: Custom Software Development -->
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title" data-i18n="services.items.1.title">CUSTOM SOFTWARE DEVELOPMENT</h3>
+              <p class="service-card-desc" data-i18n="services.items.1.desc">Diseño y desarrollo de aplicaciones web de alto rendimiento, plataformas empresariales seguras y software personalizado a medida.</p>
+              <div class="service-benefit" data-i18n="services.items.1.benefit">Control total del código, sin dependencias de soluciones genéricas limitantes.</div>
+              <div class="service-tags">
+                <span class="service-tag-pill">Web Apps</span>
+                <span class="service-tag-pill">Enterprise Core</span>
+                <span class="service-tag-pill">Microservicios</span>
+                <span class="service-tag-pill">Cloud Native</span>
+              </div>
+            </div>
+            <div class="service-bottom">
+              <a href="#cotizacion" class="service-cta-link js-select-service" data-service-id="software" data-i18n="services.requestService">
+                Cotizar este servicio
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 3: API & System Integration -->
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+                  <path d="M6 9v6"/><path d="M9 6h9"/><path d="M15 18H9"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title" data-i18n="services.items.2.title">API & SYSTEM INTEGRATION</h3>
+              <p class="service-card-desc" data-i18n="services.items.2.desc">Integración profunda de APIs, sistemas CRM, ERP, bases de datos y servicios externos para unificar ecosistemas fragmentados.</p>
+              <div class="service-benefit" data-i18n="services.items.2.benefit">Consistencia de datos en tiempo real entre todas las herramientas del negocio.</div>
+              <div class="service-tags">
+                <span class="service-tag-pill">REST / GraphQL</span>
+                <span class="service-tag-pill">Webhooks</span>
+                <span class="service-tag-pill">ERP / CRM Sync</span>
+                <span class="service-tag-pill">ETL Pipelines</span>
+              </div>
+            </div>
+            <div class="service-bottom">
+              <a href="#cotizacion" class="service-cta-link js-select-service" data-service-id="integration" data-i18n="services.requestService">
+                Cotizar este servicio
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 4: Artificial Intelligence -->
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3h-1v1a4 4 0 0 1-8 0v-1H7a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3h1V6a4 4 0 0 1 4-4z"/>
+                  <circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title" data-i18n="services.items.3.title">ARTIFICIAL INTELLIGENCE</h3>
+              <p class="service-card-desc" data-i18n="services.items.3.desc">Implementación de agentes inteligentes, asistentes cognitivos y modelos de IA aplicados a la automatización de procesos clave.</p>
+              <div class="service-benefit" data-i18n="services.items.3.benefit">Toma de decisiones asistida y procesamiento de lenguaje e información no estructurada.</div>
+              <div class="service-tags">
+                <span class="service-tag-pill">Agentes Autónomos</span>
+                <span class="service-tag-pill">LLMs</span>
+                <span class="service-tag-pill">RAG Empresarial</span>
+                <span class="service-tag-pill">Predictive ML</span>
+              </div>
+            </div>
+            <div class="service-bottom">
+              <a href="#cotizacion" class="service-cta-link js-select-service" data-service-id="ai" data-i18n="services.requestService">
+                Cotizar este servicio
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 5: Data Analytics & BI -->
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+                  <line x1="2" y1="20" x2="22" y2="20"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title" data-i18n="services.items.4.title">DATA ANALYTICS & BUSINESS INTELLIGENCE</h3>
+              <p class="service-card-desc" data-i18n="services.items.4.desc">Construcción de dashboards ejecutivos, visualización de indicadores en tiempo real y arquitecturas de datos para decisiones estratégicas.</p>
+              <div class="service-benefit" data-i18n="services.items.4.benefit">Visibilidad total del rendimiento de la empresa respaldada por datos fiables.</div>
+              <div class="service-tags">
+                <span class="service-tag-pill">Executive BI</span>
+                <span class="service-tag-pill">Data Warehousing</span>
+                <span class="service-tag-pill">KPI Tracking</span>
+                <span class="service-tag-pill">Real-Time Telemetry</span>
+              </div>
+            </div>
+            <div class="service-bottom">
+              <a href="#cotizacion" class="service-cta-link js-select-service" data-service-id="data" data-i18n="services.requestService">
+                Cotizar este servicio
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 6: Technology Consulting -->
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title" data-i18n="services.items.5.title">TECHNOLOGY CONSULTING</h3>
+              <p class="service-card-desc" data-i18n="services.items.5.desc">Consultoría estratégica, diagnóstico de infraestructura, diseño de arquitectura de software y optimización continua de procesos técnicos.</p>
+              <div class="service-benefit" data-i18n="services.items.5.benefit">Claridad técnica antes de invertir en desarrollos costosos y desalineados.</div>
+              <div class="service-tags">
+                <span class="service-tag-pill">Tech Architecture</span>
+                <span class="service-tag-pill">Audit &amp; Security</span>
+                <span class="service-tag-pill">Cloud Strategy</span>
+                <span class="service-tag-pill">Process Re-engineering</span>
+              </div>
+            </div>
+            <div class="service-bottom">
+              <a href="#cotizacion" class="service-cta-link js-select-service" data-service-id="consulting" data-i18n="services.requestService">
+                Cotizar este servicio
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /.services-grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — SOLUTIONS SHOWCASE (TABS)
+    ============================================================ -->
+    <section class="solutions-section" id="soluciones" aria-label="Soluciones y arquitecturas de referencia">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag" data-i18n="solutions.tag">APLICACIÓN EN LA INDUSTRIA</span>
+          <h2 class="section-title" data-i18n="solutions.title">Soluciones y Arquitecturas de Referencia</h2>
+          <p class="section-subtitle" data-i18n="solutions.subtitle">Modelos de implementación tecnológica orientados a desafíos reales de escala empresarial.</p>
+        </div>
+
+        <!-- Tab Navigation -->
+        <nav class="solutions-nav" role="tablist" aria-label="Escenarios de soluciones">
+          <button class="solution-tab-btn active" role="tab" aria-selected="true" aria-controls="solution-operations" data-tab="operations" data-i18n="solutions.tabs.0.name">Automatización Operativa</button>
+          <button class="solution-tab-btn" role="tab" aria-selected="false" aria-controls="solution-ecosystem" data-tab="ecosystem" data-i18n="solutions.tabs.1.name">Integración de Ecosistemas</button>
+          <button class="solution-tab-btn" role="tab" aria-selected="false" aria-controls="solution-ai-agents" data-tab="ai-agents" data-i18n="solutions.tabs.2.name">Inteligencia Artificial</button>
+          <button class="solution-tab-btn" role="tab" aria-selected="false" aria-controls="solution-platforms" data-tab="platforms" data-i18n="solutions.tabs.3.name">Plataformas Digitales</button>
+          <button class="solution-tab-btn" role="tab" aria-selected="false" aria-controls="solution-analytics" data-tab="analytics" data-i18n="solutions.tabs.4.name">Gestión y Análisis de Datos</button>
+        </nav>
+
+        <!-- Panel 1: Operations Automation -->
+        <div class="solution-panel active" id="solution-operations" role="tabpanel" aria-labelledby="tab-operations">
+          <div class="solution-grid">
+            <div class="solution-info">
+              <h3 data-i18n="solutions.tabs.0.title">Orquestación Automatizada de Operaciones y Aprobaciones</h3>
+              <p data-i18n="solutions.tabs.0.summary">Pipeline de automatización que centraliza peticiones, valida documentos con IA y ejecuta transacciones sin intervención manual.</p>
+              <div class="solution-specs">
+                <div class="spec-item"><span class="spec-label" data-i18n="solutions.tabs.0.specs.0.label">Tiempo de Respuesta</span><span class="spec-val">&lt; 2 segundos</span></div>
+                <div class="spec-item"><span class="spec-label" data-i18n="solutions.tabs.0.specs.1.label">Validación de Datos</span><span class="spec-val">Multinivel asistida</span></div>
+                <div class="spec-item"><span class="spec-label" data-i18n="solutions.tabs.0.specs.2.label">Auditoría</span><span class="spec-val">Trazabilidad 100%</span></div>
+              </div>
+              <span class="disclaimer-badge" data-i18n="solutions.disclaimer">Nota: Escenario ilustrativo de arquitectura tecnológica para fines demostrativos.</span>
+            </div>
+            <div class="mockup-window" aria-label="Diagrama de flujo de orquestación">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span class="mockup-dot dot-red"></span><span class="mockup-dot dot-yellow"></span><span class="mockup-dot dot-green"></span></div>
+                <span class="mockup-title">orchestration-pipeline.sys</span>
+                <span class="mockup-status-badge">● LIVE</span>
+              </div>
+              <div class="mockup-body">
+                <div class="pipeline-flow">
+                  <div class="flow-step active">
+                    <span class="flow-name">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                      Intake Request Received
+                    </span>
+                    <span class="flow-tag">TRIGGER</span>
+                  </div>
+                  <div class="flow-step active">
+                    <span class="flow-name">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                      Document AI Validation
+                    </span>
+                    <span class="flow-tag">AI ✓</span>
+                  </div>
+                  <div class="flow-step active">
+                    <span class="flow-name">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                      Multi-tier Approval Gate
+                    </span>
+                    <span class="flow-tag">RBAC</span>
+                  </div>
+                  <div class="flow-step active">
+                    <span class="flow-name">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                      ERP Transaction Execution
+                    </span>
+                    <span class="flow-tag">SYNC</span>
+                  </div>
+                  <div class="flow-step">
+                    <span class="flow-name" style="color:#84939B">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#84939B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      Audit Log &amp; Notification
+                    </span>
+                    <span class="flow-tag" style="color:#84939B;background:rgba(132,147,155,0.1);border-color:rgba(132,147,155,0.2)">PENDING</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Ecosystem Integration -->
+        <div class="solution-panel" id="solution-ecosystem" role="tabpanel" aria-labelledby="tab-ecosystem" hidden>
+          <div class="solution-grid">
+            <div class="solution-info">
+              <h3 data-i18n="solutions.tabs.1.title">Hub Unificado de Conexión ERP, CRM y Servicios en la Nube</h3>
+              <p data-i18n="solutions.tabs.1.summary">Capa de middleware que intercomunica bases de datos legadas con plataformas SaaS modernas mediante eventos en tiempo real.</p>
+              <div class="solution-specs">
+                <div class="spec-item"><span class="spec-label">Conectores</span><span class="spec-val">Bidi REST / gRPC</span></div>
+                <div class="spec-item"><span class="spec-label">Event Broker</span><span class="spec-val">Message Queues</span></div>
+                <div class="spec-item"><span class="spec-label">Tolerancia a Fallos</span><span class="spec-val">Circuit Breaker</span></div>
+              </div>
+              <span class="disclaimer-badge" data-i18n="solutions.disclaimer">Nota: Escenario ilustrativo.</span>
+            </div>
+            <div class="mockup-window" aria-label="Diagrama de integración de ecosistemas">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span class="mockup-dot dot-red"></span><span class="mockup-dot dot-yellow"></span><span class="mockup-dot dot-green"></span></div>
+                <span class="mockup-title">integration-mesh.topology</span>
+                <span class="mockup-status-badge">● ACTIVE</span>
+              </div>
+              <div class="mockup-body">
+                <div class="pipeline-flow">
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>ERP (SAP / Oracle) Source</span><span class="flow-tag">LEGACY</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Event Bus — Message Queue</span><span class="flow-tag">ASYNC</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>CRM Sync (Salesforce / HubSpot)</span><span class="flow-tag">BIDI</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Circuit Breaker — Fault Tolerance</span><span class="flow-tag">RESILIENT</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: AI Agents -->
+        <div class="solution-panel" id="solution-ai-agents" role="tabpanel" aria-labelledby="tab-ai-agents" hidden>
+          <div class="solution-grid">
+            <div class="solution-info">
+              <h3 data-i18n="solutions.tabs.2.title">Agentes Cognitivos para Procesamiento de Casos Complejos</h3>
+              <p data-i18n="solutions.tabs.2.summary">Red de agentes especializados que extraen datos de contratos, analizan riesgos y redactan respuestas contextualizadas.</p>
+              <div class="solution-specs">
+                <div class="spec-item"><span class="spec-label">Pipeline</span><span class="spec-val">RAG Empresarial</span></div>
+                <div class="spec-item"><span class="spec-label">Privacidad</span><span class="spec-val">Zero-Data Retention</span></div>
+                <div class="spec-item"><span class="spec-label">Precisión</span><span class="spec-val">Human-in-the-loop</span></div>
+              </div>
+              <span class="disclaimer-badge" data-i18n="solutions.disclaimer">Nota: Escenario ilustrativo.</span>
+            </div>
+            <div class="mockup-window" aria-label="Matriz de agentes cognitivos">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span class="mockup-dot dot-red"></span><span class="mockup-dot dot-yellow"></span><span class="mockup-dot dot-green"></span></div>
+                <span class="mockup-title">agent-matrix.ai</span>
+                <span class="mockup-status-badge">● RUNNING</span>
+              </div>
+              <div class="mockup-body">
+                <div class="pipeline-flow">
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Document Ingestion Agent</span><span class="flow-tag">OCR + NLP</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Knowledge Retrieval (RAG)</span><span class="flow-tag">VECTOR DB</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Risk Analysis Agent</span><span class="flow-tag">LLM</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Human Validation Gate</span><span class="flow-tag">HITL ✓</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4: Digital Platforms -->
+        <div class="solution-panel" id="solution-platforms" role="tabpanel" aria-labelledby="tab-platforms" hidden>
+          <div class="solution-grid">
+            <div class="solution-info">
+              <h3 data-i18n="solutions.tabs.3.title">Software Empresarial Multitenant de Alta Disponibilidad</h3>
+              <p data-i18n="solutions.tabs.3.summary">Arquitectura modular en microservicios diseñada para soportar picos masivos de transacciones concurrentes con seguridad bancaria.</p>
+              <div class="solution-specs">
+                <div class="spec-item"><span class="spec-label">Disponibilidad</span><span class="spec-val">99.99% SLA</span></div>
+                <div class="spec-item"><span class="spec-label">Seguridad</span><span class="spec-val">RBAC + AES-256</span></div>
+                <div class="spec-item"><span class="spec-label">Infraestructura</span><span class="spec-val">K8s / Serverless</span></div>
+              </div>
+              <span class="disclaimer-badge" data-i18n="solutions.disclaimer">Nota: Escenario ilustrativo.</span>
+            </div>
+            <div class="mockup-window" aria-label="Arquitectura de software multitenant">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span class="mockup-dot dot-red"></span><span class="mockup-dot dot-yellow"></span><span class="mockup-dot dot-green"></span></div>
+                <span class="mockup-title">platform-architecture.yaml</span>
+                <span class="mockup-status-badge">● DEPLOYED</span>
+              </div>
+              <div class="mockup-body">
+                <div class="pipeline-flow">
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>API Gateway + Auth Layer</span><span class="flow-tag">ZERO-TRUST</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Microservices Mesh (K8s)</span><span class="flow-tag">AUTOSCALE</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Multi-tenant Data Isolation</span><span class="flow-tag">AES-256</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>CI/CD Pipeline — Zero Downtime</span><span class="flow-tag">DevOps</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 5: Analytics -->
+        <div class="solution-panel" id="solution-analytics" role="tabpanel" aria-labelledby="tab-analytics" hidden>
+          <div class="solution-grid">
+            <div class="solution-info">
+              <h3 data-i18n="solutions.tabs.4.title">Data Pipeline y Dashboard Ejecutivo en Tiempo Real</h3>
+              <p data-i18n="solutions.tabs.4.summary">Ingesta continua de telemetría de negocio, normalización en data warehouse y presentación en paneles ejecutivos reactivos.</p>
+              <div class="solution-specs">
+                <div class="spec-item"><span class="spec-label">Actualización</span><span class="spec-val">Sub-segundo</span></div>
+                <div class="spec-item"><span class="spec-label">KPIs</span><span class="spec-val">+50 métricas clave</span></div>
+                <div class="spec-item"><span class="spec-label">Alertamiento</span><span class="spec-val">Detección anomalías</span></div>
+              </div>
+              <span class="disclaimer-badge" data-i18n="solutions.disclaimer">Nota: Escenario ilustrativo.</span>
+            </div>
+            <div class="mockup-window" aria-label="Dashboard de telemetría de datos">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span class="mockup-dot dot-red"></span><span class="mockup-dot dot-yellow"></span><span class="mockup-dot dot-green"></span></div>
+                <span class="mockup-title">executive-dashboard.bi</span>
+                <span class="mockup-status-badge">● STREAMING</span>
+              </div>
+              <div class="mockup-body">
+                <div class="pipeline-flow">
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Multi-source Data Ingestion</span><span class="flow-tag">STREAM</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Data Warehouse (Columnar)</span><span class="flow-tag">ETL</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>KPI Engine + Anomaly Detection</span><span class="flow-tag">AI</span></div>
+                  <div class="flow-step active"><span class="flow-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Executive Dashboard (Real-time)</span><span class="flow-tag">REACTIVE</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5 — METHODOLOGY (4 STAGES)
+    ============================================================ -->
+    <section class="methodology-section" id="metodologia" aria-label="Metodología de ingeniería">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="methodology.tag">PROCESO DE INGENIERÍA</span>
+          <h2 class="section-title" data-i18n="methodology.title">De la estrategia a la implementación.</h2>
+          <p class="section-subtitle" data-i18n="methodology.subtitle">Un enfoque estructurado que mitiga riesgos, garantiza rigor técnico y asegura un despliegue sin interrupciones.</p>
+        </div>
+
+        <div class="methodology-timeline" role="list">
+
+          <article class="method-card" role="listitem">
+            <div class="method-node-circle" aria-hidden="true">01</div>
+            <h3 class="method-title" data-i18n="methodology.steps.0.title">Discovery</h3>
+            <p class="method-desc" data-i18n="methodology.steps.0.desc">Inmersión profunda en tus procesos actuales, sistemas existentes, requerimientos técnicos y objetivos cuantitativos del negocio.</p>
+            <div class="method-deliverable" data-i18n="methodology.steps.0.deliverable">Roadmap Técnico &amp; Alcance de Arquitectura</div>
+          </article>
+
+          <article class="method-card" role="listitem">
+            <div class="method-node-circle" aria-hidden="true">02</div>
+            <h3 class="method-title" data-i18n="methodology.steps.1.title">Architecture</h3>
+            <p class="method-desc" data-i18n="methodology.steps.1.desc">Diseño de la topología de software, definición de esquemas de datos, flujos de integración y protocolos de seguridad.</p>
+            <div class="method-deliverable" data-i18n="methodology.steps.1.deliverable">Especificación de Sistema &amp; Prototipos</div>
+          </article>
+
+          <article class="method-card" role="listitem">
+            <div class="method-node-circle" aria-hidden="true">03</div>
+            <h3 class="method-title" data-i18n="methodology.steps.2.title">Development</h3>
+            <p class="method-desc" data-i18n="methodology.steps.2.desc">Construcción modular bajo estándares de código limpio, integración continua (CI/CD) y validación automatizada en entornos de prueba.</p>
+            <div class="method-deliverable" data-i18n="methodology.steps.2.deliverable">Builds Funcionales &amp; Testing Exhaustivo</div>
+          </article>
+
+          <article class="method-card" role="listitem">
+            <div class="method-node-circle" aria-hidden="true">04</div>
+            <h3 class="method-title" data-i18n="methodology.steps.3.title">Deployment &amp; Evolution</h3>
+            <p class="method-desc" data-i18n="methodology.steps.3.desc">Puesta en producción segura con monitoreo de rendimiento, documentación exhaustiva y soporte para evolución continua.</p>
+            <div class="method-deliverable" data-i18n="methodology.steps.3.deliverable">Despliegue Productivo &amp; Telemetría Activa</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 — DIFFERENTIATORS (WHY ARKENOR LABS)
+    ============================================================ -->
+    <section class="diff-section" id="nosotros" aria-label="Por qué ARKENOR LABS">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="differentiators.tag">POR QUÉ ARKENOR LABS</span>
+          <h2 class="section-title" data-i18n="differentiators.title">Engineering technology that creates real business value.</h2>
+          <p class="section-subtitle" data-i18n="differentiators.subtitle">Combinamos solidez técnica con agilidad de entrega para resolver problemas donde las soluciones genéricas se quedan cortas.</p>
+        </div>
+
+        <div class="diff-grid">
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="diff-title" data-i18n="differentiators.items.0.title">Soluciones Personalizadas</h3>
+            <p class="diff-desc" data-i18n="differentiators.items.0.desc">Cada línea de código y flujo se construye en función de tu ventaja competitiva, sin dependencias forzadas.</p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="diff-title" data-i18n="differentiators.items.1.title">Arquitecturas Escalables</h3>
+            <p class="diff-desc" data-i18n="differentiators.items.1.desc">Sistemas diseñados para soportar crecimiento en volumen de datos y usuarios sin degradar velocidad.</p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="diff-title" data-i18n="differentiators.items.2.title">Integración Tecnológica</h3>
+            <p class="diff-desc" data-i18n="differentiators.items.2.desc">Conectamos tu ecosistema actual sin obligarte a desechar inversiones previas en software.</p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 class="diff-title" data-i18n="differentiators.items.3.title">Automatización Inteligente</h3>
+            <p class="diff-desc" data-i18n="differentiators.items.3.desc">Optimizamos tareas operativas de punta a punta, permitiendo a tu equipo enfocarse en actividades estratégicas.</p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+              </svg>
+            </div>
+            <h3 class="diff-title" data-i18n="differentiators.items.4.title">Calidad de Ingeniería</h3>
+            <p class="diff-desc" data-i18n="differentiators.items.4.desc">Estándares rigurosos de testing, código mantenible, seguridad por diseño y documentación clara.</p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/>
+              </svg>
+            </div>
+            <h3 class="diff-title" data-i18n="differentiators.items.5.title">Enfoque en Resultados</h3>
+            <p class="diff-desc" data-i18n="differentiators.items.5.desc">Priorizamos entregables que impactan directamente el rendimiento y los costos de tu organización.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 — COMMERCIAL QUOTE FORM
+    ============================================================ -->
+    <section class="quote-section" id="cotizacion" aria-label="Formulario de cotización">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag" data-i18n="quote.tag">INICIEMOS TU PROYECTO</span>
+          <h2 class="section-title" data-i18n="quote.title">Solicitar Propuesta Técnica y Comercial</h2>
+          <p class="section-subtitle" data-i18n="quote.subtitle">Completa el formulario y un especialista de ingeniería analizará los requerimientos para estructurar una propuesta adaptada a tu organización.</p>
+        </div>
+
+        <div class="quote-card">
+          <form id="arkenorQuoteForm" novalidate autocomplete="on" aria-label="Formulario de solicitud de cotización">
+
+            <!-- HONEYPOT ANTI-SPAM (hidden from humans) -->
+            <div class="honeypot-field" aria-hidden="true">
+              <label for="formHoneypot">Dirección del sitio web</label>
+              <input type="text" id="formHoneypot" name="website" tabindex="-1" autocomplete="nope" />
+            </div>
+
+            <!-- Row 1: Full Name + Company -->
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="quoteName" data-i18n="quote.form.name">Nombre completo <span aria-hidden="true" style="color:#ff5252">*</span></label>
+                <input type="text" id="quoteName" name="fullName" class="form-input" required autocomplete="name" data-i18n-placeholder="quote.form.namePlaceholder" placeholder="Ej. Carlos Mendoza" aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="quoteCompany" data-i18n="quote.form.company">Empresa <span aria-hidden="true" style="color:#ff5252">*</span></label>
+                <input type="text" id="quoteCompany" name="company" class="form-input" required autocomplete="organization" data-i18n-placeholder="quote.form.companyPlaceholder" placeholder="Ej. Innovación Logística S.A." aria-required="true" />
+              </div>
+            </div>
+
+            <!-- Row 2: Email + Phone -->
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="quoteEmail" data-i18n="quote.form.email">Correo electrónico corporativo <span aria-hidden="true" style="color:#ff5252">*</span></label>
+                <input type="email" id="quoteEmail" name="email" class="form-input" required autocomplete="email" inputmode="email" data-i18n-placeholder="quote.form.emailPlaceholder" placeholder="nombre@empresa.com" aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="quotePhone" data-i18n="quote.form.phone">WhatsApp / Teléfono <span aria-hidden="true" style="color:#ff5252">*</span></label>
+                <input type="tel" id="quotePhone" name="phone" class="form-input" required autocomplete="tel" inputmode="tel" data-i18n-placeholder="quote.form.phonePlaceholder" placeholder="+57 300 000 0000" aria-required="true" />
+              </div>
+            </div>
+
+            <!-- Row 3: Country + Service -->
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="quoteCountry" data-i18n="quote.form.country">País <span aria-hidden="true" style="color:#ff5252">*</span></label>
+                <select id="quoteCountry" name="country" class="form-select" required aria-required="true">
+                  <option value="" disabled selected data-i18n="quote.form.countrySelect">Selecciona tu país</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="México">México</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Perú">Perú</option>
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="Venezuela">Venezuela</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Uruguay">Uruguay</option>
+                  <option value="Paraguay">Paraguay</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Panamá">Panamá</option>
+                  <option value="Guatemala">Guatemala</option>
+                  <option value="Honduras">Honduras</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="República Dominicana">República Dominicana</option>
+                  <option value="Cuba">Cuba</option>
+                  <option value="Puerto Rico">Puerto Rico</option>
+                  <option value="España">España</option>
+                  <option value="United States">United States</option>
+                  <option value="Canada">Canada</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Otro">Otro / Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="quoteService" data-i18n="quote.form.service">Servicio de interés <span aria-hidden="true" style="color:#ff5252">*</span></label>
+                <select id="quoteService" name="service" class="form-select" required aria-required="true">
+                  <option value="" disabled selected>Selecciona el servicio principal</option>
+                  <option value="automation">Automatización de Procesos</option>
+                  <option value="software">Desarrollo de Software</option>
+                  <option value="integration">Integración de Sistemas</option>
+                  <option value="ai">Inteligencia Artificial</option>
+                  <option value="data">Data &amp; BI</option>
+                  <option value="consulting">Consultoría Tecnológica</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Project Description -->
+            <div class="form-group">
+              <label class="form-label" for="quoteDescription" data-i18n="quote.form.description">Descripción del proyecto <span aria-hidden="true" style="color:#ff5252">*</span></label>
+              <textarea id="quoteDescription" name="description" class="form-textarea" required aria-required="true" rows="5" data-i18n-placeholder="quote.form.descriptionPlaceholder" placeholder="Describe brevemente tus procesos actuales, necesidades o el alcance del software/automatización que deseas implementar..."></textarea>
+            </div>
+
+            <!-- Row 4: Budget + Timeline (optional) -->
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="quoteBudget" data-i18n="quote.form.budget">Presupuesto estimado <span style="color:#84939B;font-weight:400">(opcional)</span></label>
+                <select id="quoteBudget" name="budget" class="form-select">
+                  <option value="">Seleccionar rango estimado (opcional)</option>
+                  <option value="Menos de $3,000 USD">Menos de $3,000 USD</option>
+                  <option value="$3,000 - $7,000 USD">$3,000 - $7,000 USD</option>
+                  <option value="$7,000 - $15,000 USD">$7,000 - $15,000 USD</option>
+                  <option value="$15,000 - $30,000 USD">$15,000 - $30,000 USD</option>
+                  <option value="Más de $30,000 USD">Más de $30,000 USD</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="quoteTimeline" data-i18n="quote.form.timeline">Fecha estimada de implementación <span style="color:#84939B;font-weight:400">(opcional)</span></label>
+                <select id="quoteTimeline" name="timeline" class="form-select">
+                  <option value="">Seleccionar plazo deseado (opcional)</option>
+                  <option value="Inmediato">Inmediato (&lt; 30 días)</option>
+                  <option value="1-3 meses">1 a 3 meses</option>
+                  <option value="3-6 meses">3 a 6 meses</option>
+                  <option value="Exploratoria">Fase de planeación / Exploratoria</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Form Footer: Submit + Confidentiality -->
+            <div class="form-footer">
+              <div class="form-confidentiality">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#84939B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <span data-i18n="quote.form.confidentiality">Garantizamos estricta confidencialidad bajo estándares de seguridad de datos.</span>
+              </div>
+              <button type="submit" id="quoteSubmitBtn" class="btn btn-primary btn-lg" style="align-self:flex-start">
+                <span class="btn-text" data-i18n="quote.form.submitBtn">Enviar solicitud técnica</span>
+                <span class="btn-spinner hidden" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <!-- Server response status area -->
+            <div id="quoteFormStatus" class="form-status" role="status" aria-live="polite"></div>
+
+          </form>
+        </div><!-- /.quote-card -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 8 — FINAL CTA
+    ============================================================ -->
+    <section class="final-cta-section" id="cta-final" aria-label="Llamado a la acción final">
+      <div class="container">
+        <div class="final-cta-box">
+          <span class="section-tag" data-i18n="ctaFinal.tag">ACELERACIÓN TECNOLÓGICA</span>
+          <h2 data-i18n="ctaFinal.title">Tu próxima ventaja tecnológica comienza aquí.</h2>
+          <p data-i18n="ctaFinal.description">Cuéntanos qué necesitas automatizar, desarrollar o integrar. Diseñemos juntos una solución que impulse tu negocio.</p>
+          <div class="final-cta-actions">
+            <a href="#cotizacion" class="btn btn-primary btn-lg" data-i18n="ctaFinal.btnQuote">
+              Solicitar cotización
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+            <a href="#cotizacion" class="btn btn-secondary btn-lg js-whatsapp-trigger" data-i18n="ctaFinal.btnExpert">
+              Hablar con un especialista
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo" aria-label="Pie de página ARKENOR LABS">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <!-- Brand Column -->
+        <div class="footer-brand-col">
+          <img src="/assets/images/logo.svg" alt="ARKENOR LABS" class="footer-logo-img" height="38" />
+          <p class="footer-about" data-i18n="footer.about">Ingeniería tecnológica especializada en automatización inteligente de procesos, desarrollo de software a medida e integración de ecosistemas digitales empresariales.</p>
+
+          <!-- Social Links -->
+          <div class="footer-social-links">
+            <!-- LinkedIn -->
+            <a href="#" class="footer-social-btn js-social-linkedin" aria-label="LinkedIn ARKENOR LABS">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="footer-social-btn js-social-instagram" aria-label="Instagram ARKENOR LABS">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <!-- WhatsApp (conditional) -->
+            <a href="#cotizacion" class="footer-social-btn js-whatsapp-trigger" aria-label="WhatsApp ARKENOR LABS">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:#25D366">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Column -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer.colNav">Navegación</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+            <li><a href="#soluciones" data-i18n="nav.solutions">Soluciones</a></li>
+            <li><a href="#metodologia" data-i18n="nav.methodology">Metodología</a></li>
+            <li><a href="#nosotros" data-i18n="nav.differentiators">Nosotros</a></li>
+            <li><a href="#cotizacion" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Column -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer.colServices">Servicios</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#cotizacion" class="js-select-service" data-service-id="automation" data-i18n="services.items.0.title">Business Process Automation</a></li>
+            <li><a href="#cotizacion" class="js-select-service" data-service-id="software" data-i18n="services.items.1.title">Custom Software Development</a></li>
+            <li><a href="#cotizacion" class="js-select-service" data-service-id="integration" data-i18n="services.items.2.title">API &amp; System Integration</a></li>
+            <li><a href="#cotizacion" class="js-select-service" data-service-id="ai" data-i18n="services.items.3.title">Artificial Intelligence</a></li>
+            <li><a href="#cotizacion" class="js-select-service" data-service-id="data" data-i18n="services.items.4.title">Data Analytics &amp; BI</a></li>
+            <li><a href="#cotizacion" class="js-select-service" data-service-id="consulting" data-i18n="services.items.5.title">Technology Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Column -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer.colLegal">Legal &amp; Privacidad</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#" class="js-legal-trigger" data-doc="privacy" data-i18n="footer.privacy">Política de Privacidad</a></li>
+            <li><a href="#" class="js-legal-trigger" data-doc="terms" data-i18n="footer.terms">Términos y Condiciones</a></li>
+            <li>
+              <!-- Contact Email (managed by main.js based on config) -->
+              <a href="#cotizacion" class="js-contact-email" aria-label="Correo corporativo ARKENOR LABS">Contacto Corporativo</a>
+            </li>
+          </ul>
+
+          <!-- Language selector in footer -->
+          <div class="lang-switcher" style="margin-top:28px">
+            <button class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
+            <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+
+      </div><!-- /.footer-top -->
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <span class="footer-tagline" data-i18n="footer.tagline">ARKENOR LABS — Engineering a more connected future.</span>
+        <span>&copy; <span id="footerYear">2026</span> ARKENOR LABS. <span data-i18n="footer.rights">Todos los derechos reservados.</span></span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       WHATSAPP FLOATING BUTTON
+  ============================================================ -->
+  <a href="#cotizacion" class="wa-float-btn js-whatsapp-trigger" aria-label="Contactar por WhatsApp">
+    <span class="wa-pulse-ring" aria-hidden="true"></span>
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       LEGAL DOCUMENT MODAL
+  ============================================================ -->
+  <div class="modal-wrapper" id="legalDocModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="legalModalTitle" style="font-size:1.2rem">Documento Legal</h3>
+        <button class="modal-close" aria-label="Cerrar modal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="legalModalContent"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       WHATSAPP FALLBACK MODAL (shown when WA number not configured)
+  ============================================================ -->
+  <div class="modal-wrapper" id="whatsappFallbackModal" role="dialog" aria-modal="true" aria-labelledby="waFallbackTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog" style="max-width:480px;text-align:center">
+      <div class="modal-header">
+        <h3 id="waFallbackTitle" style="font-size:1.1rem" data-i18n="whatsapp.fallbackModalTitle">Canal de WhatsApp</h3>
+        <button class="modal-close" aria-label="Cerrar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align:center;padding:16px 0">
+        <svg width="52" height="52" viewBox="0 0 24 24" fill="#25D366" style="margin:0 auto 20px" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <p data-i18n="whatsapp.fallbackModalMsg" style="margin-bottom:24px;color:#c4d2da">El número oficial de WhatsApp de ARKENOR LABS está en proceso de verificación corporativa. Puedes enviar tu solicitud directamente a través de nuestro formulario técnico.</p>
+        <a href="#cotizacion" class="btn btn-primary js-close-wa-modal" data-i18n="whatsapp.btnGoToForm">Ir al Formulario de Cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SCRIPTS — Loaded in order (config first, then i18n, then modules)
+  ============================================================ -->
+  <script src="/assets/js/config.js"></script>
+  <script src="/assets/js/i18n.js"></script>
+  <script>
+    // Expose config & translations to i18n module and main
+    window.ARKENOR_CONFIG = ARKENOR_CONFIG;
+    window.ARKENOR_TRANSLATIONS = ARKENOR_TRANSLATIONS;
+    // Set footer year
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/quote-form.js"></script>
+  <script src="/assets/js/hero-canvas.js"></script>
+
+</body>
+</html>
+
